@@ -89,7 +89,8 @@ If `opts` is specified, then the default options (shown below) will be overridde
   getAnnounceOpts: Function, // Custom callback to allow sending extra parameters to the tracker
   maxWebConns: Number,       // Max number of simultaneous connections per web seed [default=4]
   path: String,              // Folder to download files to (default=`/tmp/webtorrent/`)
-  store: Function            // Custom chunk store (must follow [abstract-chunk-store](https://www.npmjs.com/package/abstract-chunk-store) API)
+  store: Function,           // Custom chunk store (must follow [abstract-chunk-store](https://www.npmjs.com/package/abstract-chunk-store) API)
+  userAgent: String          // Custom user agent to present on webseed, tracker and metadata requests
 }
 ```
 
